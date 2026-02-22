@@ -125,7 +125,7 @@ const Register = () => {
         /* LEFT */
         .left {
             width:360px; flex-shrink:0;
-            background:#f0ede5;
+            background:#fcbf49;
             padding:44px 40px;
             display:flex; flex-direction:column; justify-content:space-between;
             border-right:1px solid #e4e0d8;
@@ -156,7 +156,7 @@ const Register = () => {
             transition: all 0.2s;
         }
         .step-dot.active { background:#18181b; border-color:#18181b; color:#fff; }
-        .step-dot.done   { background:#eab308; border-color:#eab308; color:#18181b; }
+        .step-dot.done   { background:#fcbf49; border-color:#fcbf49; color:#18181b; }
         .step-label { font-size:12px; font-weight:600; color:#a1a1aa; }
         .step-label.active { color:#18181b; }
 
@@ -165,7 +165,7 @@ const Register = () => {
         .avatar-stack { display:flex; }
         .avatar {
             width:30px; height:30px; border-radius:50%;
-            border:2px solid #f0ede5; margin-left:-8px;
+            border:2px solid #fcbf49; margin-left:-8px;
             display:flex; align-items:center; justify-content:center;
             font-size:10px; font-weight:700; color:#18181b; flex-shrink:0;
         }
@@ -231,13 +231,13 @@ const Register = () => {
         /* Yellow accent on primary hover */
         .btn-yellow {
             flex:2; padding:14px 24px;
-            background:#eab308; color:#18181b;
+            background:#fcbf49; color:#18181b;
             border:none; border-radius:50px;
             font-size:14px; font-weight:700; font-family:'DM Sans',sans-serif;
             cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px;
             transition:background 0.2s;
         }
-        .btn-yellow:hover { background:#ca9e00; }
+        .btn-yellow:hover { background:#eaaa26; }
 
         .fn { margin-top:14px; font-size:11px; color:#a1a1aa; text-align:center; }
         .fn a { color:#18181b; font-weight:700; text-decoration:underline; }
@@ -268,7 +268,7 @@ const Register = () => {
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         margin: '0 auto 20px',
                     }}>
-                        <Check size={30} color="#eab308" />
+                        <Check size={30} color="#fcbf49" />
                     </div>
                     <h2 style={{ fontSize: 24, fontWeight: 800, color: '#18181b', letterSpacing: '-0.03em', marginBottom: 8 }}>
                         Account Created!
@@ -332,7 +332,7 @@ const Register = () => {
 
                     <div className="left-bottom">
                         <div className="avatar-stack">
-                            {[['#eab308', 'S'], ['#18181b', 'N'], ['#a3a3a3', 'M'], ['#71717a', 'A']].map(([bg, l], i) => (
+                            {[['#eaaa26', 'S'], ['#18181b', 'N'], ['#a3a3a3', 'M'], ['#71717a', 'A']].map(([bg, l], i) => (
                                 <div key={i} className="avatar" style={{ background: bg }}>{l}</div>
                             ))}
                         </div>

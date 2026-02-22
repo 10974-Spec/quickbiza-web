@@ -24,7 +24,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [theme, setTheme] = useState<Theme>('default');
     const [layout, setLayout] = useState<Layout>('sidebar-collapsible');
-    const [primaryColor, setPrimaryColor] = useState('#f77f00'); // Default orange
+    const [primaryColor, setPrimaryColor] = useState('#fcbf49'); // Default quickbiza yellow
     const [logo, setLogo] = useState<string | null>(null);
     const [companyName, setCompanyName] = useState('Aroma Bakery');
     const [isLoading, setIsLoading] = useState(true);

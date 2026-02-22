@@ -120,7 +120,7 @@ const Login = () => {
         /* LEFT */
         .left {
             width: 380px; flex-shrink: 0;
-            background: #f5f1ec;
+            background: #fcbf49; /* injected the requested color into the left panel */
             padding: 44px 40px;
             display: flex; flex-direction: column;
             justify-content: space-between;
@@ -150,7 +150,7 @@ const Login = () => {
         .avatar-stack { display: flex; }
         .avatar {
             width: 30px; height: 30px; border-radius: 50%;
-            border: 2px solid #f5f1ec;
+            border: 2px solid #fcbf49;
             margin-left: -8px; overflow: hidden;
             display: flex; align-items: center; justify-content: center;
             font-size: 11px; font-weight: 700; color: #fff;
