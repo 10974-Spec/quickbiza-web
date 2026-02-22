@@ -33,8 +33,8 @@ const HeroSection = () => {
         className="pointer-events-none absolute inset-0 z-0"
         style={{
           backgroundImage: `
-            linear-gradient(to right,  rgba(249, 115, 22, 0.45) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(249, 115, 22, 0.45) 2px, transparent 2px)
+            linear-gradient(to right,  rgba(247, 127, 0, 0.45) 2px, transparent 2px),
+            linear-gradient(to bottom, rgba(247, 127, 0, 0.45) 2px, transparent 2px)
           `,
           backgroundSize: "48px 48px",
           WebkitMaskImage:
@@ -117,7 +117,7 @@ const HeroSection = () => {
             {/* back card */}
             <div
               onClick={() => handleSwap("leftBack")}
-              className="rounded-2xl overflow-hidden border-2 border-border shadow-2xl cursor-pointer hover:scale-105 hover:z-30 hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all duration-300"
+              className="rounded-2xl overflow-hidden border-2 border-border shadow-2xl cursor-pointer hover:scale-105 hover:z-30 hover:shadow-[0_0_30px_rgba(247,127,0,0.4)] transition-all duration-300"
               style={{
                 width: "320px",
                 height: "208px",
@@ -130,7 +130,7 @@ const HeroSection = () => {
             {/* front card */}
             <div
               onClick={() => handleSwap("leftFront")}
-              className="rounded-2xl overflow-hidden border-2 border-border shadow-2xl cursor-pointer hover:scale-105 hover:z-30 hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all duration-300"
+              className="rounded-2xl overflow-hidden border-2 border-border shadow-2xl cursor-pointer hover:scale-105 hover:z-30 hover:shadow-[0_0_30px_rgba(247,127,0,0.4)] transition-all duration-300"
               style={{
                 width: "320px",
                 height: "208px",
@@ -150,7 +150,7 @@ const HeroSection = () => {
             {/* back card */}
             <div
               onClick={() => handleSwap("rightBack")}
-              className="rounded-2xl overflow-hidden border-2 border-border shadow-2xl cursor-pointer hover:scale-105 hover:z-30 hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all duration-300"
+              className="rounded-2xl overflow-hidden border-2 border-border shadow-2xl cursor-pointer hover:scale-105 hover:z-30 hover:shadow-[0_0_30px_rgba(247,127,0,0.4)] transition-all duration-300"
               style={{
                 width: "320px",
                 height: "208px",
@@ -163,7 +163,7 @@ const HeroSection = () => {
             {/* front card */}
             <div
               onClick={() => handleSwap("rightFront")}
-              className="rounded-2xl overflow-hidden border-2 border-border shadow-2xl cursor-pointer hover:scale-105 hover:z-30 hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all duration-300"
+              className="rounded-2xl overflow-hidden border-2 border-border shadow-2xl cursor-pointer hover:scale-105 hover:z-30 hover:shadow-[0_0_30px_rgba(247,127,0,0.4)] transition-all duration-300"
               style={{
                 width: "320px",
                 height: "208px",

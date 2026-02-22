@@ -352,7 +352,7 @@ const Login = () => {
                         </button>
 
                         <p className="form-footer" style={{ marginTop: 14 }}>
-                            By signing in, you agree to our <a href="#">terms &amp; conditions</a>.
+                            By signing in, you agree to our <a href="/terms">terms &amp; conditions</a>.
                         </p>
 
                         <p className="form-footer" style={{ marginTop: 10 }}>

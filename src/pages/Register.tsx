@@ -436,7 +436,7 @@ const Register = () => {
                                     }
                                 </button>
                             </div>
-                            <p className="fn">By registering, you agree to our <a href="#">terms &amp; conditions</a>.</p>
+                            <p className="fn">By registering, you agree to our <a href="/terms">terms &amp; conditions</a>.</p>
                         </form>
                     )}
                 </div>
