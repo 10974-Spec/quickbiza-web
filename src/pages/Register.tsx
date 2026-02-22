@@ -251,11 +251,14 @@ const Register = () => {
             <div style={pageWrap}>
                 <style>{css}</style>
                 <div className="nav-bar fade-up">
-                    <div className="nav-logo">
+                    <a href="/" className="nav-logo" style={{ textDecoration: 'none' }}>
                         <div className="nav-logo-icon"><Store size={14} color="#fff" /></div>
                         <span className="nav-logo-text">QuickBiza POS</span>
+                    </a>
+                    <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                        <a href="/" className="nav-pill" style={{ textDecoration: 'none' }}>← Home</a>
+                        <span className="nav-pill">Cloud Registration</span>
                     </div>
-                    <span className="nav-pill">Cloud Registration</span>
                 </div>
                 <div className="fade-up" style={{
                     background: '#fff', border: '1px solid #e4e0d8', borderRadius: 20,
@@ -294,11 +297,14 @@ const Register = () => {
 
             {/* Nav */}
             <div className="nav-bar fade-up">
-                <div className="nav-logo">
+                <a href="/" className="nav-logo" style={{ textDecoration: 'none' }}>
                     <div className="nav-logo-icon"><Store size={14} color="#fff" /></div>
                     <span className="nav-logo-text">QuickBiza POS</span>
+                </a>
+                <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                    <a href="/" className="nav-pill" style={{ textDecoration: 'none' }}>← Home</a>
+                    <span className="nav-pill">Cloud Registration</span>
                 </div>
-                <span className="nav-pill">Cloud Registration</span>
             </div>
 
             {/* Card */}

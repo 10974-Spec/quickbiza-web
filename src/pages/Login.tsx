@@ -233,11 +233,14 @@ const Login = () => {
             <div style={pageStyle}>
                 <style>{sharedStyles}</style>
                 <div className="nav-bar fade-up">
-                    <div className="nav-logo">
+                    <a href="/" className="nav-logo" style={{ textDecoration: 'none' }}>
                         <div className="nav-logo-icon"><Store size={13} color="var(--background)" /></div>
                         <span className="nav-logo-text">QuickBiza POS</span>
+                    </a>
+                    <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                        <a href="/" className="nav-tag" style={{ textDecoration: 'none' }}>← Home</a>
+                        <span className="nav-tag">Cloud Portal</span>
                     </div>
-                    <span className="nav-tag">Cloud Portal</span>
                 </div>
 
                 <div className="card fade-up" style={{ maxWidth: 500, flex: 'none', padding: '56px 48px', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
@@ -276,11 +279,14 @@ const Login = () => {
 
             {/* Nav */}
             <div className="nav-bar fade-up">
-                <div className="nav-logo">
+                <a href="/" className="nav-logo" style={{ textDecoration: 'none' }}>
                     <div className="nav-logo-icon"><Store size={13} color="var(--background)" /></div>
                     <span className="nav-logo-text">QuickBiza POS</span>
+                </a>
+                <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                    <a href="/" className="nav-tag" style={{ textDecoration: 'none' }}>← Home</a>
+                    <span className="nav-tag">Cloud Portal</span>
                 </div>
-                <span className="nav-tag">Cloud Portal</span>
             </div>
 
             {/* Card */}
