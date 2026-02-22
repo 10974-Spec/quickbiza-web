@@ -77,7 +77,7 @@ const HeroSection = () => {
           className="flex items-center mb-6 animate-fade-in-up"
           style={{ animationDelay: "0.3s", opacity: 0 }}
         >
-          <a href="/downloads/QuickBiza_Setup_1.0.2.exe" download>
+          <a href="/downloads/QuickBiza_Setup_1.0.3.exe" download>
             <Button
               size="lg"
               className="rounded-full px-14 py-6 text-base font-semibold shadow-lg gap-2 hover-glow hover-scale"
