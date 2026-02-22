@@ -50,9 +50,9 @@ const License = () => {
 
     const handleDownload = () => {
         const element = document.createElement("a");
-        const file = new Blob([`SokoFlow License Key\n------------------\nKey: ${licenseKey}\nPlan: ${plans.find(p => p.id === selectedPlan)?.name}\nDate: ${new Date().toLocaleDateString()}`], { type: 'text/plain' });
+        const file = new Blob([`QuickBiza License Key\n------------------\nKey: ${licenseKey}\nPlan: ${plans.find(p => p.id === selectedPlan)?.name}\nDate: ${new Date().toLocaleDateString()}`], { type: 'text/plain' });
         element.href = URL.createObjectURL(file);
-        element.download = "sokoflow_license.txt";
+        element.download = "quickbiza_license.txt";
         document.body.appendChild(element); // Required for this to work in FireFox
         element.click();
     };
@@ -74,7 +74,7 @@ const License = () => {
     const handleLaunch = () => {
         if (!licenseKey) return;
         // Include token and username in deep link for auto-login
-        const launchUrl = `sokoflow://license-verified?key=${licenseKey}&token=${token}&username=${username}&userId=${userId}`;
+        const launchUrl = `quickbiza://license-verified?key=${licenseKey}&token=${token}&username=${username}&userId=${userId}`;
         window.location.href = launchUrl;
     };
 
@@ -89,7 +89,7 @@ const License = () => {
                             <Shield className="w-6 h-6 text-white" />
                         </div>
                         <h1 className="text-2xl font-bold font-display mb-2">Secure Your Business</h1>
-                        <p className="text-zinc-400 text-sm">Unlock the full potential of SokoFlow with a licensed plan.</p>
+                        <p className="text-zinc-400 text-sm">Unlock the full potential of QuickBiza with a licensed plan.</p>
                     </div>
                     <div className="space-y-4 text-sm text-zinc-500 mt-8">
                         <div className="flex items-center gap-2">
@@ -239,7 +239,7 @@ const License = () => {
                                     onClick={handleLaunch}
                                     className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-orange-500/20 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
                                 >
-                                    Launch SokoFlow POS
+                                    Launch QuickBiza POS
                                 </button>
                             </div>
                         </div>
@@ -248,7 +248,7 @@ const License = () => {
             </div>
 
             <p className="mt-8 text-zinc-400 text-xs">
-                &copy; 2026 SokoFlow Systems.
+                &copy; 2026 QuickBiza Systems.
             </p>
         </div>
     );

@@ -47,8 +47,8 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="flex items-center justify-between border-t border-card/10 pt-6">
-          <span className="text-xl font-extrabold">SokoFlow</span>
-          <p className="text-xs opacity-50">©2025 SokoFlow. All rights reserved.</p>
+          <span className="text-xl font-extrabold">QuickBiza</span>
+          <p className="text-xs opacity-50">©2025 QuickBiza. All rights reserved.</p>
         </div>
       </div>
     </footer>

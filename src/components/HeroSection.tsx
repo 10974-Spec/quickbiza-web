@@ -18,12 +18,12 @@ const HeroSection = () => {
         <span className="italic underline decoration-primary decoration-4 underline-offset-8">
           Business
         </span>{" "}
-        with SokoFlow
+        with QuickBiza
       </h1>
 
       {/* Subtitle */}
       <p className="text-muted-foreground text-lg max-w-xl mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s", opacity: 0 }}>
-        Elevate your business with SokoFlow — the all-in-one platform for managing products, sales, and inventory with ease.
+        Elevate your business with QuickBiza — the all-in-one platform for managing products, sales, and inventory with ease.
       </p>
 
       {/* Download buttons */}
@@ -35,10 +35,12 @@ const HeroSection = () => {
             <span className="font-bold">→</span>
           </Button>
         </a>
-        <Button size="lg" variant="outline" className="rounded-full px-8 py-6 text-base font-semibold border-foreground text-foreground gap-2 hover-scale">
-          <Monitor className="w-5 h-5" />
-          Download App
-        </Button>
+        <a href="/downloads/QuickBiza_POS_Setup_1.0.1.exe" download>
+          <Button size="lg" variant="outline" className="rounded-full px-8 py-6 text-base font-semibold border-foreground text-foreground gap-2 hover-scale">
+            <Monitor className="w-5 h-5" />
+            Download App
+          </Button>
+        </a>
       </div>
 
       {/* Social proof */}
@@ -56,7 +58,7 @@ const HeroSection = () => {
         <div className="bg-foreground rounded-t-3xl p-4 pt-8 md:p-8 md:pt-12 shadow-2xl">
           <img
             src={demoScreenshot}
-            alt="SokoFlow Dashboard"
+            alt="QuickBiza Dashboard"
             className="w-full rounded-xl shadow-lg border border-border/20"
           />
         </div>

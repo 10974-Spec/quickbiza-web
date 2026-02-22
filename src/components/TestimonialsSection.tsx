@@ -3,7 +3,7 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const testimonials = [
   {
-    text: "SokoFlow transformed how we manage our bakery inventory. Everything is so seamless now, from tracking stock to managing sales.",
+    text: "QuickBiza transformed how we manage our bakery inventory. Everything is so seamless now, from tracking stock to managing sales.",
     name: "James Oloo",
     role: "CEO, Strong Enterprise",
   },
@@ -17,7 +17,7 @@ const testimonials = [
     heading: "Good Job!",
   },
   {
-    text: "Our entire production workflow is now digital thanks to SokoFlow. The analytics are fantastic and the reporting saves us hours.",
+    text: "Our entire production workflow is now digital thanks to QuickBiza. The analytics are fantastic and the reporting saves us hours.",
     name: "Victoria Welton",
     role: "Fermentum Odio Co.",
   },
@@ -40,7 +40,7 @@ const testimonials = [
     signature: true,
   },
   {
-    text: "SokoFlow's customer management helps us build better relationships and drive repeat business.",
+    text: "QuickBiza's customer management helps us build better relationships and drive repeat business.",
     name: "Basil Hallward",
     role: "Co-Founder Gravida.com",
   },
@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground leading-tight mb-4">
             What our customers say
           </h2>
-          <p className="text-muted-foreground text-lg">Real feedback from real businesses using SokoFlow</p>
+          <p className="text-muted-foreground text-lg">Real feedback from real businesses using QuickBiza</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -116,7 +116,7 @@ const TestimonialsSection = () => {
           <div className={`bg-card rounded-2xl p-6 border border-border shadow-sm hover-lift transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`} style={{ transitionDelay: "500ms" }}>
             <div className="text-5xl text-primary/20 font-serif mb-2">"</div>
             <p className="text-sm text-muted-foreground">{testimonials[4].text}</p>
-            <p className="text-sm italic text-muted-foreground mt-4 font-serif">— SokoFlow User</p>
+            <p className="text-sm italic text-muted-foreground mt-4 font-serif">— QuickBiza User</p>
           </div>
 
           <div className={`bg-foreground rounded-2xl p-6 text-card hover-lift transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`} style={{ transitionDelay: "600ms" }}>

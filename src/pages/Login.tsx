@@ -32,7 +32,7 @@ const Login = () => {
             toast.success('Login Successful! Opening App...');
 
             // Construct Deep Link to open the Desktop App
-            const url = `sokoflow://login?token=${token}&username=${user.username}&userId=${user.id}`;
+            const url = `quickbiza://login?token=${token}&username=${user.username}&userId=${user.id}`;
             setRedirectUrl(url);
 
             // Attempt to open automatically
@@ -235,7 +235,7 @@ const Login = () => {
                 <div className="nav-bar fade-up">
                     <div className="nav-logo">
                         <div className="nav-logo-icon"><Store size={13} color="var(--background)" /></div>
-                        <span className="nav-logo-text">SokoFlow POS</span>
+                        <span className="nav-logo-text">QuickBiza POS</span>
                     </div>
                     <span className="nav-tag">Cloud Portal</span>
                 </div>
@@ -260,7 +260,7 @@ const Login = () => {
                         className="btn-black"
                         style={{ borderRadius: '50px' }}
                     >
-                        <Check size={16} /> Launch SokoFlow POS
+                        <Check size={16} /> Launch QuickBiza POS
                     </button>
                 </div>
 
@@ -278,7 +278,7 @@ const Login = () => {
             <div className="nav-bar fade-up">
                 <div className="nav-logo">
                     <div className="nav-logo-icon"><Store size={13} color="var(--background)" /></div>
-                    <span className="nav-logo-text">SokoFlow POS</span>
+                    <span className="nav-logo-text">QuickBiza POS</span>
                 </div>
                 <span className="nav-tag">Cloud Portal</span>
             </div>
@@ -292,7 +292,7 @@ const Login = () => {
                         <div className="left-tag">Sign in</div>
                         <h1 className="left-title">Let's get<br />started</h1>
                         <p className="left-sub">
-                            Access your SokoFlow dashboard and manage your retail business from anywhere.
+                            Access your QuickBiza dashboard and manage your retail business from anywhere.
                         </p>
                     </div>
 
@@ -304,7 +304,7 @@ const Login = () => {
                             <div className="avatar" style={{ background: '#71717a' }}>M</div>
                         </div>
                         <div className="left-social-text">
-                            <strong>2,400+ businesses</strong><br />trust SokoFlow daily
+                            <strong>2,400+ businesses</strong><br />trust QuickBiza daily
                         </div>
                     </div>
 

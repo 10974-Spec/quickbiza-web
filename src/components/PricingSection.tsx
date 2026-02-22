@@ -34,7 +34,7 @@ const plans = [
 ];
 
 const faqs = [
-  { q: "How to stay safe on SokoFlow", a: "We use industry-standard encryption and security practices to keep your data safe at all times." },
+  { q: "How to stay safe on QuickBiza", a: "We use industry-standard encryption and security practices to keep your data safe at all times." },
   { q: "About Temporarily Banned Accounts", a: "Abuse of our platform results in temporary bans. Contact support if you believe this was done in error. We review all cases within 24 hours." },
   { q: "About two-step verification", a: "Enable two-step verification in your account settings for an extra layer of security." },
   { q: "How to restore your history", a: "Navigate to Settings > Data > Restore to recover previously deleted records." },

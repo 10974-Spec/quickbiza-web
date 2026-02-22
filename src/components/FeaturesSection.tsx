@@ -20,7 +20,7 @@ const features = [
     icon: TrendingUp,
     title: "Business Intelligence",
     description:
-      "SokoFlow accelerates business research with AI-driven analysis, providing real-time insights, sector reports and trend synthesis.",
+      "QuickBiza accelerates business research with AI-driven analysis, providing real-time insights, sector reports and trend synthesis.",
     mockup: "intelligence",
   },
   {

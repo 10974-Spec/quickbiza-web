@@ -253,7 +253,7 @@ const Register = () => {
                 <div className="nav-bar fade-up">
                     <div className="nav-logo">
                         <div className="nav-logo-icon"><Store size={14} color="#fff" /></div>
-                        <span className="nav-logo-text">SokoFlow POS</span>
+                        <span className="nav-logo-text">QuickBiza POS</span>
                     </div>
                     <span className="nav-pill">Cloud Registration</span>
                 </div>
@@ -278,7 +278,7 @@ const Register = () => {
                     </p>
                     <button onClick={() => window.location.href = redirectUrl}
                         className="btn-yellow" style={{ flex: 'none', width: '100%' }}>
-                        <Check size={16} /> Launch SokoFlow POS
+                        <Check size={16} /> Launch QuickBiza POS
                     </button>
                     <p style={{ marginTop: 12, fontSize: 11, color: '#d4d4d8' }}>You may close this window after launching.</p>
                 </div>
@@ -296,7 +296,7 @@ const Register = () => {
             <div className="nav-bar fade-up">
                 <div className="nav-logo">
                     <div className="nav-logo-icon"><Store size={14} color="#fff" /></div>
-                    <span className="nav-logo-text">SokoFlow POS</span>
+                    <span className="nav-logo-text">QuickBiza POS</span>
                 </div>
                 <span className="nav-pill">Cloud Registration</span>
             </div>
@@ -310,7 +310,7 @@ const Register = () => {
                         <div className="left-tag">New Company</div>
                         <h1 className="left-title">Let's get<br />set up</h1>
                         <p className="left-sub">
-                            Register your business on SokoFlow and start selling smarter in minutes.
+                            Register your business on QuickBiza and start selling smarter in minutes.
                         </p>
 
                         <div className="steps">
@@ -337,7 +337,7 @@ const Register = () => {
                             ))}
                         </div>
                         <div className="social-text">
-                            <strong>2,400+ businesses</strong><br />trust SokoFlow daily
+                            <strong>2,400+ businesses</strong><br />trust QuickBiza daily
                         </div>
                     </div>
 

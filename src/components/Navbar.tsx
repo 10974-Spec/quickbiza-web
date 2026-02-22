@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
 
       <div className="absolute left-1/2 -translate-x-1/2">
-        <span className="text-2xl font-extrabold text-foreground tracking-tight">SokoFlow</span>
+        <span className="text-2xl font-extrabold text-foreground tracking-tight">QuickBiza</span>
       </div>
 
       <div className="hidden md:flex items-center space-x-4">

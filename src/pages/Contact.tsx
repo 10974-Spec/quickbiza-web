@@ -45,7 +45,7 @@ const Contact = () => {
             {/* Left - Contact Info */}
             <div className="bg-zinc-900 p-10 flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl font-extrabold text-white mb-8">SokoFlow</h3>
+                <h3 className="text-2xl font-extrabold text-white mb-8">QuickBiza</h3>
 
                 <div className="space-y-8">
                   <div className="flex items-start gap-4">
@@ -53,7 +53,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-white mb-1">Chat to us</h4>
                       <p className="text-sm text-zinc-400 mb-1">Our friendly team is here to help.</p>
-                      <p className="text-sm font-medium text-white">hi@sokoflow.com</p>
+                      <p className="text-sm font-medium text-white">hi@quickbiza.com</p>
                     </div>
                   </div>
 
