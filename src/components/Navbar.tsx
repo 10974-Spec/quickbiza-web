@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/context/ThemeContext";
 
 const Navbar = () => {
+  const { isDarkMode, toggleDarkMode } = useTheme();
+
   return (
     <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full relative">
       <div className="flex items-center gap-8">
@@ -27,6 +30,13 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex items-center space-x-4">
+        <button
+          onClick={toggleDarkMode}
+          className="p-2 mr-2 rounded-full hover:bg-secondary text-foreground transition-colors"
+          aria-label="Toggle Dark Mode"
+        >
+          {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+        </button>
         <a href="/login">
           <Button variant="ghost" size="sm" className="rounded-full text-xs font-medium px-4 h-8 text-foreground hover:text-primary">
             Log in

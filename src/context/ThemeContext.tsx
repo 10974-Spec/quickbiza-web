@@ -15,6 +15,8 @@ interface ThemeContextType {
     companyName: string;
     setCompanyName: (name: string) => void;
     isLoading: boolean;
+    isDarkMode: boolean;
+    toggleDarkMode: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -26,6 +28,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [logo, setLogo] = useState<string | null>(null);
     const [companyName, setCompanyName] = useState('Aroma Bakery');
     const [isLoading, setIsLoading] = useState(true);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     // Load settings from backend on mount
     useEffect(() => {
@@ -38,12 +41,20 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         setIsLoading(false);
     };
 
-    // Apply Theme Class
+    // Apply Theme Class and Dark Mode
     useEffect(() => {
         const root = window.document.documentElement;
         root.classList.remove('theme-default', 'theme-neo', 'theme-win7', 'theme-saas', 'theme-material', 'theme-terminal', 'theme-retro', 'theme-access');
         root.classList.add(`theme-${theme}`);
-    }, [theme]);
+
+        if (isDarkMode) {
+            root.classList.add('dark');
+        } else {
+            root.classList.remove('dark');
+        }
+    }, [theme, isDarkMode]);
+
+    const toggleDarkMode = () => setIsDarkMode(prev => !prev);
 
     // Apply Primary Color Variable
     useEffect(() => {
@@ -81,7 +92,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
             setLogo,
             companyName,
             setCompanyName,
-            isLoading
+            isLoading,
+            isDarkMode,
+            toggleDarkMode
         }}>
             {children}
         </ThemeContext.Provider>
