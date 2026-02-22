@@ -47,11 +47,11 @@ const HeroSection = () => {
       {/* ── Content ── */}
       <div className="relative z-10 flex flex-col items-center w-full">
 
-        {/* Waitlist badge */}
-        <div className="flex items-center gap-2 bg-card border border-border rounded-full px-4 py-2 mb-8 shadow-sm animate-fade-in">
-          <span className="text-primary">✦</span>
-          <span className="text-sm text-muted-foreground">Join the waitlist for updates</span>
-          <span className="text-primary font-bold">→</span>
+        {/* Top Tagline */}
+        <div className="mb-6 animate-fade-in">
+          <span className="text-xl md:text-2xl font-bold text-foreground">
+            Your <span className="underline decoration-primary decoration-4 underline-offset-4">all in one</span> POS
+          </span>
         </div>
 
         {/* Heading */}
@@ -77,7 +77,7 @@ const HeroSection = () => {
           className="flex items-center mb-6 animate-fade-in-up"
           style={{ animationDelay: "0.3s", opacity: 0 }}
         >
-          <a href="/downloads/QuickBiza_POS_Setup_1.0.1.exe" download>
+          <a href="/downloads/QuickBiza_Setup_1.0.2.exe" download>
             <Button
               size="lg"
               className="rounded-full px-14 py-6 text-base font-semibold shadow-lg gap-2 hover-glow hover-scale"
