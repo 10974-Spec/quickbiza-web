@@ -6,7 +6,7 @@ import { useTheme } from '@/context/ThemeContext';
 
 // For web app, we point to the backend URL. 
 // In development this might be localhost:5000, in prod it's the server URL.
-const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://quickbiza-api.onrender.com/api' : 'http://localhost:5000/api');
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://quickbizabackend.onrender.com/api' : 'http://localhost:5000/api');
 
 const Login = () => {
     const [loading, setLoading] = useState(false);

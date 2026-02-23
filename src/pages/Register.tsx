@@ -4,7 +4,7 @@ import axios from 'axios';
 import { toast } from 'sonner';
 
 // Use environment variable for API URL or default based on environment
-const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://quickbiza-api.onrender.com/api' : 'http://localhost:5000/api');
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://quickbizabackend.onrender.com/api' : 'http://localhost:5000/api');
 
 const Register = () => {
     const [step, setStep] = useState(1);
