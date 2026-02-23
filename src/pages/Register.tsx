@@ -32,34 +32,34 @@ const Register = () => {
         addLog('Starting registration...');
         try {
             if (formData.password !== formData.confirmPassword) throw new Error('Passwords do not match');
-            addLog('Step 1: Creating Company...');
+            addLog('Step 1: Creating Company... (server may take up to 60s to wake up)');
             const companyRes = await axios.post(`${API_URL}/setup/company`, {
                 name: formData.name, business_type: formData.business_type,
                 email: formData.email, phone: formData.phone, address: formData.address,
                 primary_color: '#eab308', theme: 'default',
-            }, { timeout: 15000 });
+            }, { timeout: 65000 });
             if (!companyRes.data.success) throw new Error(companyRes.data.error || 'Company creation failed');
             addLog('Step 2: Creating Admin...');
             const adminRes = await axios.post(`${API_URL}/setup/admin`, {
                 username: formData.username, password: formData.password, fullName: formData.adminName,
-            }, { timeout: 15000 });
+            }, { timeout: 30000 });
             if (!adminRes.data.success) throw new Error(adminRes.data.error || 'Admin creation failed');
             addLog('Step 3: Logging in...');
             const loginRes = await axios.post(`${API_URL}/auth/login`, {
                 username: formData.username, password: formData.password, source: 'web'
-            }, { timeout: 15000 });
+            }, { timeout: 30000 });
             const token = loginRes.data.token;
             const userId = loginRes.data.user.id;
             toast.success('Account Created! Proceeding to Licensing...');
 
-            // Redirect to License Page within the Web App
-            // We use window.location here or navigate if using router hook (will update to use navigate next)
-            // For now, let's just use the href to the new internal license route
             window.location.href = `/license?token=${token}&username=${formData.username}&userId=${userId}&companyId=${companyRes.data.cloud_id || ''}`;
 
             setLoading(false);
         } catch (error: any) {
-            const msg = error.response?.data?.error || error.message || 'Setup failed';
+            let msg = error.response?.data?.error || error.message || 'Setup failed';
+            if (error.code === 'ECONNABORTED' || msg.toLowerCase().includes('timeout')) {
+                msg = 'The server is still waking up. Please wait a moment and try again.';
+            }
             addLog(`ERROR: ${msg}`);
             toast.error(msg);
             setLoading(false);
